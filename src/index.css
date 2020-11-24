@@ -48,10 +48,10 @@ body {
     margin-left: 20px;
   }
   
-  .background-yellow {
-    background-color: yellow;
+  .yellow {
+    background: yellow;
   }
 
-  .background-red {
-    background-color: red;
+  .red {
+    background: red;
   }
