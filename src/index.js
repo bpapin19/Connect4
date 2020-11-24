@@ -108,7 +108,8 @@ function Square(props) {
         if (squares[j] == null) {
             if (this.state.yellowIsNext) {
               squares[j] = 'yellow';
-            }
+            } else {
+              squares[j] = 'red';
             break;
         }
     }
