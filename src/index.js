@@ -80,17 +80,7 @@ class Board extends React.Component {
       </div>
     );
   }
-<<<<<<< HEAD
 }
-
-class Game extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      history: [
-        {
-          squares: Array(42).fill(null)
-=======
   
   class Game extends React.Component {
     constructor(props) {
@@ -105,29 +95,6 @@ class Game extends React.Component {
         yellowIsNext: true
       };
     }
-  
-    handleClick(i) {
-      const history = this.state.history.slice(0, this.state.stepNumber + 1);
-      const current = history[history.length - 1];
-      const squares = current.squares.slice();
-      if (calculateWinner(squares) || squares[i]) {
-        return;
-      }
-      var j;
-      for (j = 35 + (i%7); j > 0; j -= 7) {
-        if (squares[j] == null) {
-            if (this.state.yellowIsNext) {
-              squares[j] = 'yellow';
-            } else {
-              squares[j] = 'red';
-            break;
->>>>>>> caee76161f110fcaacedebb7a87bd789dd5d6c7b
-        }
-      ],
-      stepNumber: 0,
-      yellowIsNext: true
-    };
-  }
 
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
@@ -296,8 +263,4 @@ function calculateWinner(squares) {
       }
     }
   }
-<<<<<<< HEAD
 }
-=======
-  
->>>>>>> caee76161f110fcaacedebb7a87bd789dd5d6c7b
